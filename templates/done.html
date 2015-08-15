@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Check Result Site{% end %}
+{% block content %}
+<div class="container">
+    <h1>Check Result Process {{ id }}</h1>
+
+    <p>Stat : {{ stat }}</p>
+    <ul>
+        <li>
+            Output:
+            <p>{{ out }}</p>
+        </li>
+
+        <li>
+            Error:
+            <p>{{ err }}</p>
+        </li>
+    </ul>
+</div>
+{% end %}
